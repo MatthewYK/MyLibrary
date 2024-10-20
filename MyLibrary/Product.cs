@@ -12,10 +12,18 @@ namespace MyLibrary
         public string Name  => name;
         public decimal UnitPrice  => unitPrice;
         public int UnitsInStock  => unitInStock;
+        public bool Discontinued { get; set; }
+        public void setDiscontinued() => Discontinued = true;
+        public bool GetStatus()=>Discontinued;
     }
-    public class Product2 : Product 
-    { 
 
-    }
+
+
+    //public class Product2 (int id, string name,
+        //bool discontinued) 
+        //: Product (id,name,default,default)
+    //{ 
+       // public bool Discontinued { get; set; } = discontinued;
+   // }
 
 }
